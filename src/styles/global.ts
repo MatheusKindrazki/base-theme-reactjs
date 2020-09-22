@@ -10,13 +10,13 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #f1f2fb;
     color: #312e38;
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
-    font: 16px;
+    font-family: sans-serif;
+    font-size: 16px;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
@@ -25,6 +25,12 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  .main-container{
+    margin: 0 auto;
+    max-width: calc(1280px + 32px);
+    padding: 16px;
   }
 
 `;

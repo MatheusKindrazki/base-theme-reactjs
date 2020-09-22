@@ -5,9 +5,9 @@ import { Switch } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { useToast, ToastProps } from '~/hooks/toast';
+import Home from '~/pages/Home';
 import { removeToast } from '~/store/modules/toast/actions';
 
-import Example from '../pages/Example';
 import Teste from '../pages/Teste';
 import Route from './Route';
 
@@ -26,9 +26,9 @@ const Routes: React.FC = () => {
 
   return (
     <Switch>
-      <Route path="/" exact component={Example} />
+      <Route path="/" exact component={Home} />
 
-      <Route path="/dashboard" component={Example} isPrivate />
+      <Route path="/dashboard" component={Home} isPrivate />
       <Route path="/teste" component={Teste} isPrivate />
     </Switch>
   );
